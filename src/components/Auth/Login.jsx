@@ -15,7 +15,7 @@ const Login = ({handleLogin}) => {
     }
 
   return (
-    <div className='flex h-full w-full mt-[300px] space-x-2'>
+    <div className='flex h-full w-full mt-[200px] space-x-2'>
           <div className='border-2 h-fit mx-auto  rounded-xl border-emerald-600 p-5 sm:p-20 space-x-3 ' >
               <form onSubmit={submithandler} className='flex gap-3 flex-col items-center justify-center'>
                   <input value={email} onChange={(e)=>setEmail(e.target.value)} required='true' className=' outline-none bg-transparent placeholder:text-gray-400 text-white  border-2 border-emerald-600 text-xl py-3 px-5 rounded-full' type="email" placeholder='Enter your email' />
