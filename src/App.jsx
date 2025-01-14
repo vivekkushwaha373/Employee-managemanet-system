@@ -61,11 +61,11 @@ const App = () => {
 
 
   return (
-    <>
+    <div className='w-full'>
       {!user ? <Login handleLogin={handleLogin}></Login> : ''}
       {user == 'admin' ? <AdminDashborad changeUser={setUser} data={loggedInData}></AdminDashborad> : (user == 'employee' ? <EmployeeDashboard changeUser={setUser} setLoggedInData={setLoggedInData} data={loggedInData}></EmployeeDashboard> : null)}
       {/* <AdminDashborad></AdminDashborad> */}
-    </>
+    </div>
   )
 }
 
